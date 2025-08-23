@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Mesa - Modern Family Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-label="La Mesa restaurant home">
+        <img src="assets/logo.svg" alt="La Mesa logo" class="logo" />
+        <h1 class="visually-hidden">La Mesa</h1>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Main menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="cta" onclick="location.href='#menu'">Reserve a Table</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="assets/hero.svg" alt="Interior view of La Mesa with cozy tables" class="hero-image" />
+      <div class="hero-content container">
+        <h2 id="hero-title">Welcome to La Mesa</h2>
+        <p class="lead">A modern family restaurant serving seasonal dishes, handcrafted cocktails, and warm hospitality.</p>
+        <p class="meta"><strong>Open:</strong> Daily • 11:00 AM – 10:00 PM</p>
+        <a class="hero-cta" href="#menu">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section id="menu" class="container section" aria-labelledby="menu-title">
+      <h3 id="menu-title">Menu Highlights</h3>
+      <p class="section-intro">Fresh ingredients, bold flavors — selected favorites from our chef.</p>
+      <div class="menu-grid" role="list">
+        <article class="menu-item" role="listitem">
+          <img src="assets/dish1.svg" alt="Grilled salmon with lemon and herbs" />
+          <h4>Grilled Salmon</h4>
+          <p class="desc">Citrus herb butter, roasted seasonal vegetables.</p>
+          <p class="price">₹599</p>
+        </article>
+        <article class="menu-item" role="listitem">
+          <img src="assets/dish2.svg" alt="Handmade wood-fired pizza" />
+          <h4>Wood-Fired Pizza</h4>
+          <p class="desc">San Marzano tomatoes, fresh basil, mozzarella.</p>
+          <p class="price">₹349</p>
+        </article>
+        <article class="menu-item" role="listitem">
+          <img src="assets/dish3.svg" alt="Vegetarian bowl with grains and roasted veggies" />
+          <h4>Harvest Bowl (V)</h4>
+          <p class="desc">Quinoa, roasted squash, tahini dressing.</p>
+          <p class="price">₹299</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hours" class="container section" aria-labelledby="hours-title">
+      <h3 id="hours-title">Hours & Service</h3>
+      <table class="hours-table" role="table" aria-describedby="hours-desc">
+        <caption id="hours-desc">Regular opening hours</caption>
+        <thead>
+          <tr><th>Day</th><th>Opening</th><th>Closing</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday - Friday</td><td>11:00 AM</td><td>10:00 PM</td></tr>
+          <tr><td>Saturday</td><td>11:00 AM</td><td>11:00 PM</td></tr>
+          <tr><td>Sunday</td><td>10:00 AM</td><td>10:00 PM</td></tr>
+        </tbody>
+      </table>
+      <p class="note">We offer dine-in, takeaway, and delivery. Call ahead for large groups.</p>
+    </section>
+
+    <section id="location" class="container section" aria-labelledby="location-title">
+      <h3 id="location-title">Location</h3>
+      <p>123 Flavor Street, Foodie District, Your City</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=La+Mesa+restaurant" target="_blank" rel="noopener">View on Google Maps</a></p>
+    </section>
+
+    <section id="contact" class="container section" aria-labelledby="contact-title">
+      <h3 id="contact-title">Contact & Reservations</h3>
+      <address>
+        <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:hello@lamesa.example">hello@lamesa.example</a></p>
+      </address>
+      <form class="contact-form" action="#" method="post" aria-label="Reservation form (demo)">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" />
+        <label for="party">Party size</label>
+        <select id="party" name="party">
+          <option>1</option><option>2</option><option>3</option><option>4+</option>
+        </select>
+        <label for="message">Message (allergies, requests)</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+        <button type="submit" class="btn">Request Reservation</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; 2025 La Mesa — All rights reserved.</p>
+      <ul class="social" aria-label="Social media">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="X">X</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
